@@ -1,0 +1,10 @@
+$ touch .gitignore
+.DS_Store
+$ git rm -r --cached .
+
+$ git add .
+$ git commit -m "feat:　.gitignore を作成する"
+$ git push origin main
+$ mkdir ~/.config/git
+$ mv .gitignore_global ~/.config/git/ignore
+$ git config --global --unset core.excludesfile
